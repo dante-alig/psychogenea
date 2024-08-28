@@ -1,6 +1,7 @@
 import Accueil from "../components/accueil";
 import Therapie from "../components/therapie";
 import Tarifs from "../components/Tarifs";
+import Feedback from "../components/Feedback";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <Accueil />
       <Therapie />
       <Tarifs />
+      <Feedback />
     </>
   );
 };
