@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -13,11 +13,37 @@ import img6 from "../images/img6.jpg";
 
 const Feedback = () => {
   const [activeSlide, setActiveSlide] = useState(0);
+  const [slidesToShow, setSlidesToShow] = useState(3);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
+
+  useEffect(() => {
+    // Fonction pour ajuster slidesToShow et isMobile en fonction de la taille de l'écran
+    const updateSettings = () => {
+      if (window.innerWidth < 480) {
+        setSlidesToShow(1);
+        setIsMobile(true);
+      } else {
+        setSlidesToShow(3);
+        setIsMobile(false);
+      }
+    };
+
+    // Appeler la fonction une première fois pour initialiser slidesToShow et isMobile
+    updateSettings();
+
+    // Ajouter un écouteur d'événement pour surveiller les changements de taille de la fenêtre
+    window.addEventListener("resize", updateSettings);
+
+    // Nettoyer l'écouteur lors du démontage du composant
+    return () => {
+      window.removeEventListener("resize", updateSettings);
+    };
+  }, []);
 
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: slidesToShow, // Utiliser l'état slidesToShow ici
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -45,7 +71,13 @@ const Feedback = () => {
             <div
               key={index}
               className={`slider ${
-                index === activeSlide + 1 || index === 0 ? "active" : ""
+                isMobile
+                  ? index === activeSlide
+                    ? "active"
+                    : ""
+                  : index === activeSlide + 1 || index === 0
+                  ? "active"
+                  : ""
               }`}
             >
               <div className="slider-pic">

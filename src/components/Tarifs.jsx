@@ -9,7 +9,7 @@ const Tarifs = () => {
   };
 
   return (
-    <div className="tarifs-container">
+    <div id="tarif" className="tarifs-container">
       <div className="tarifs-price">
         <div className="tarif-presentation">
           <h4>Presentation</h4>

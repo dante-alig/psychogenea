@@ -5,7 +5,7 @@ const Contact = () => {
   const [text, setText] = useState("");
 
   return (
-    <div className="contact-container">
+    <div id="contact" className="contact-container">
       <form
         onSubmit={(event) => {
           event.preventDefault();

@@ -6,7 +6,7 @@ const Therapie = () => {
   return (
     <>
       {" "}
-      <div className="therapie-container">
+      <div id="therapie" className="therapie-container">
         <div className="therapie-hook">
           Vivez-vous vraiment selon vos propres choix et croyances, ou bien
           ressentez-vous parfois l’influence invisible et incontrôlable de votre
@@ -45,7 +45,7 @@ const Therapie = () => {
           </div>
         </div>
       </div>
-      <div className="therapie4">
+      <div id="methode" className="therapie4">
         <div className="therapie4-container-left">
           <div className="therapie4-text">
             <h3>Déroulement des séances</h3>

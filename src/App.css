@@ -40,6 +40,25 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit; /* Utilise la couleur du texte parent */
+  text-decoration: none; /* Supprime le soulignement */
+  font-weight: normal; /* Réinitialise la graisse de la police */
+  font-style: normal; /* Réinitialise le style de la police (par exemple, italique) */
+  font-size: inherit; /* Utilise la taille de police du parent */
+  background: none; /* Supprime l'arrière-plan (si appliqué) */
+  border: none; /* Supprime les bordures */
+  padding: 0; /* Supprime les espacements internes */
+  margin: 0; /* Supprime les marges */
+  outline: none; /* Supprime les contours (par exemple, lors de la mise au point) */
+  display: inline; /* Réinitialise l'affichage à inline si changé */
+  cursor: pointer;
+}
+
 /* ------Header-------- */
 .header-container {
   height: 10vh;
@@ -87,6 +106,7 @@ body {
 
 .home-container {
   height: 90vh;
+  width: 100vh;
   display: flex;
 }
 
@@ -106,7 +126,6 @@ body {
   width: 550px;
   height: 550px;
   padding: 50px;
-  /* background-color: aquamarine; */
 }
 
 .accueil-subtitle {
@@ -230,7 +249,6 @@ body {
 
 .therapie4-container-right {
   flex: 1;
-  background-color: blue;
   height: 100vh;
   overflow: hidden;
 }
@@ -421,4 +439,255 @@ body {
 .fa-quote {
   font-size: 32px;
   color: black;
+}
+
+/* Styles pour les écrans de moins de 768px de large */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Styles pour les écrans de moins de 480px de large */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  .container {
+    padding: 5px;
+  }
+}
+
+/* ---------MEDIA QUERY------------------ */
+
+/* Définition de styles de base */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Grille fluide */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px; /* Limite la largeur maximale sur les grands écrans */
+}
+
+/* Styles pour les petites tailles d'écran (téléphones mobiles) */
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  /* -----accueil--------- */
+
+  .header-container {
+    display: none;
+  }
+  .home-container {
+    flex-wrap: wrap;
+    font-size: 9px;
+    height: auto;
+    width: 100%;
+  }
+
+  .profil-container {
+    flex: auto;
+    height: 50vh;
+  }
+
+  .accueil-container {
+    flex: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #72817f;
+    height: 50vh;
+  }
+
+  .accueil-text {
+    line-height: 22px;
+    font-size: 13px;
+  }
+  .accueil-box {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+  }
+  .profil-container img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* ------Therapie-------- */
+
+  .therapie-container {
+    display: flex;
+    height: 100vh;
+    background-color: #718784;
+    color: white;
+  }
+
+  .therapie-hook {
+    font-size: 25px;
+    font-weight: 500;
+    width: 100%;
+    padding: 20px;
+    line-height: 50px;
+  }
+
+  .therapie-texte {
+    display: none;
+  }
+
+  /* ------Therapie2-------- */
+  .therapie2-container {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .therapie2-visuel {
+    flex: auto;
+    height: 50vh;
+  }
+
+  .therapie2-texte {
+    flex: auto;
+    height: 60vh;
+    font-size: 22px;
+    line-height: 36px;
+    padding-bottom: 70px;
+  }
+  .therapie2-visuel img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  /* ------Therapie3-------- */
+
+  h2 {
+    font-size: 23px;
+    line-height: 32px;
+    padding: 20px;
+    font-style: italic;
+  }
+  .therapie3-container {
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+  }
+
+  .therapie3-box {
+    width: 100%;
+    font-size: 32px;
+    line-height: 50px;
+  }
+
+  .therapie3-box img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .therapie3-subtitle {
+    font-size: 13px;
+    line-height: 17px;
+    padding: 20px;
+  }
+
+  /* ------Therapie4-------- */
+
+  .therapie4-container-left {
+    flex: auto;
+    height: auto;
+  }
+
+  .therapie4-container-right {
+    display: none;
+  }
+
+  /* ------Tarifs-------- */
+
+  .tarif-presentation {
+    display: none;
+  }
+
+  .tarifs-price {
+    flex-direction: column;
+    height: 100%;
+    align-items: auto;
+  }
+
+  .tarifs-container {
+    height: 100%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+  /* ------slider-------- */
+
+  h6 {
+    font-size: 42px;
+  }
+
+  .feedback-title h6 {
+    margin-bottom: 0px;
+  }
+
+  .feedback-title p {
+    opacity: 70%;
+  }
+
+  .feedback {
+    height: 100vh;
+    background: white;
+    color: black;
+    padding-top: 10%;
+  }
+
+  .feedback-title {
+    font-size: 13px;
+  }
+
+  .feeback-text-container {
+    padding: 15px;
+  }
+
+  .feedback-text {
+    color: #aeacac;
+  }
+
+  .fa-quote {
+    opacity: 100%;
+  }
+}
+
+/* Tailles d'écran pour les smartphones moyens (ex: iPhone 8) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+}
+
+/* Tailles d'écran pour les tablettes */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* Tailles d'écran pour les petits ordinateurs portables */
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+}
+
+/* Tailles d'écran pour les grands ordinateurs de bureau */
+@media only screen and (min-width: 1367px) {
+}
+
+/* Styles spécifiques pour les très grands écrans (écrans larges) */
+@media only screen and (min-width: 1920px) {
 }

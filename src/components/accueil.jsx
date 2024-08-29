@@ -2,13 +2,12 @@ import profil from "../images/profil.webp";
 
 const Accueil = () => {
   return (
-    <div className="home-container">
+    <div id="accueil" className="home-container">
       <div className="profil-container">
         <img src={profil} alt="photo de profil" />
       </div>
       <div className="accueil-container">
         <div className="accueil-box">
-          {" "}
           <h1>Karine</h1>
           <h1>Raspail</h1>
           <div className="accueil-subtitle">Thérapeute en psychogénéalogie</div>
