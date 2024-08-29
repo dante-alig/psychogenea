@@ -1,6 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Tarifs = () => {
+  const handleClick = () => {
+    window.Calendly.initPopupWidget({
+      url: "https://calendly.com/samuelceleste/30min",
+    });
+    return false;
+  };
+
   return (
     <div className="tarifs-container">
       <div className="tarifs-price">
@@ -26,7 +33,7 @@ const Tarifs = () => {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quas
             expedita mollitia voluptatem explicabo porro.
           </div>
-          <button>réserver</button>
+          <button onClick={handleClick}>Consultation</button>
         </div>
         <div className="price2">
           <h4>
@@ -43,7 +50,7 @@ const Tarifs = () => {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quas
             expedita mollitia voluptatem explicabo porro.
           </div>
-          <button>réserver</button>
+          <button onClick={handleClick}>Consultation</button>
         </div>
       </div>
     </div>

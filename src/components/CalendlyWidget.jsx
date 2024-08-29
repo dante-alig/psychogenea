@@ -1,20 +1,17 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 const CalendlyWidget = () => {
-  useEffect(() => {
-    window.Calendly.initInlineWidget({
-      url: "https://calendly.com/samuelceleste/30min", // Remplacez par votre lien Calendly
-      parentElement: document.getElementById("calendly-widget"),
-      prefill: {},
-      utm: {},
+  const handleClick = () => {
+    window.Calendly.initPopupWidget({
+      url: "https://calendly.com/samuelceleste/30min",
     });
-  }, []);
+    return false;
+  };
 
   return (
-    <div
-      id="calendly-widget"
-      style={{ minWidth: "320px", height: "630px" }}
-    ></div>
+    <a href="#" onClick={handleClick}>
+      Planifier du temps avec moi
+    </a>
   );
 };
 

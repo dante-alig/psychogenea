@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -23,66 +24,45 @@ const Feedback = () => {
     afterChange: (current) => setActiveSlide(current),
   };
 
-  console.log(activeSlide);
-
   const feedbackText = [
-    "1 Easy functionality, very fair pricing, but I will say the absolute key is their instance customer service!",
-    "2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, et minima quos laboriosam corrupti architecto dignissimos vero possimus ipsa iste sunt atque modi consequuntur. Soluta error iure repellendus quam temporibus!",
-    "3 Very reliable and affordable for small businesses like ours.",
-    "4 Amazing support, great tools, highly recommend!",
-    "5 Best experience we've had with any service provider.",
-    "6 Incredible value for money and stellar customer service!",
+    "Easy functionality, very fair pricing, but I will say the absolute key is their instance customer service!",
+    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, et minima quos laboriosam corrupti architecto dignissimos vero possimus ipsa iste sunt atque modi consequuntur. Soluta error iure repellendus quam temporibus!",
+    "Very reliable and affordable for small businesses like ours.",
+    "Amazing support, great tools, highly recommend!",
+    "Best experience we've had with any service provider.",
+    "Incredible value for money and stellar customer service!",
   ];
 
   return (
     <div className="feedback">
       <div className="feedback-title">
-        <h1>Témoignages</h1>
+        <h6>Témoignages</h6>
         <p>Libérez votre Histoire, Révélez Votre Potentiel</p>
       </div>
       <div className="slider-container">
         <Slider {...settings}>
-          <div className="slider">
-            <div className="slider-pic">
-              <img src={img1} />
-              <p>1</p>
+          {[img1, img2, img3, img4, img5, img6].map((img, index) => (
+            <div
+              key={index}
+              className={`slider ${
+                index === activeSlide + 1 || index === 0 ? "active" : ""
+              }`}
+            >
+              <div className="slider-pic">
+                <img src={img} alt={`slide-${index}`} />
+              </div>
             </div>
-          </div>
-          <div className="slider">
-            <div className="slider-pic">
-              <img src={img2} />
-              <p>2</p>
-            </div>
-          </div>
-          <div className="slider">
-            <div className="slider-pic">
-              <img src={img3} />
-              <p>3</p>
-            </div>
-          </div>
-          <div className="slider">
-            <div className="slider-pic">
-              <img src={img4} />
-              <p>4</p>
-            </div>
-          </div>
-          <div className="slider">
-            <div className="slider-pic">
-              <img src={img5} />
-              <p>5</p>
-            </div>
-          </div>
-          <div className="slider">
-            <div className="slider-pic">
-              <img src={img6} />
-              <p>6</p>
-            </div>
-          </div>
+          ))}
         </Slider>
       </div>
       <div className="feeback-text-container">
         <div className="feedback-text">
+          <FontAwesomeIcon icon="fa-solid fa-quote-left" className="fa-quote" />
           <p>{feedbackText[activeSlide]}</p>
+          <FontAwesomeIcon
+            icon="fa-solid fa-quote-right"
+            className="fa-quote"
+          />
         </div>
       </div>
     </div>
