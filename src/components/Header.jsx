@@ -12,11 +12,13 @@ const Header = () => {
     <div className="header-container">
       <div className="logo">Karine Raspail</div>
       <div className="menu">
-        <Link to="#accueil">Accueil</Link>
+        <Link to="#accueil" className="hidden-menu">
+          Accueil
+        </Link>
         <Link to="#therapie">Thérapie</Link>
         <Link to="#methode">Méthode</Link>
         <Link to="#tarif">Tarif</Link>
-        <div>
+        <div className="hidden-menu">
           <a href="mailto:example@example.com?subject=Demande%20d'information&body=Bonjour,%20j'aimerais%20en%20savoir%20plus%20sur...">
             Contact
           </a>

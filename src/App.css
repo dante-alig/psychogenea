@@ -81,7 +81,6 @@ a {
 }
 
 .menu {
-  /* background-color: blue; */
   flex: 1;
   display: flex;
   gap: 20px;
@@ -488,11 +487,34 @@ body {
     line-height: 36px;
   }
 
-  /* -----accueil--------- */
+  /* ------Header-------- */
 
   .header-container {
+    min-height: 10vh;
+  }
+
+  .menu {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  .logo {
     display: none;
   }
+
+  .hidden-menu {
+    display: none;
+  }
+
+  .booking {
+    width: 100px;
+    padding: 10px;
+  }
+
+  /* ------Accueil-------- */
+
   .home-container {
     flex-wrap: wrap;
     font-size: 9px;
