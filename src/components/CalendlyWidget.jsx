@@ -3,7 +3,7 @@ import React from "react";
 const CalendlyWidget = () => {
   const handleClick = () => {
     window.Calendly.initPopupWidget({
-      url: "https://calendly.com/samuelceleste/30min",
+      url: "https://calendly.com/k-raspail971/60min",
     });
     return false;
   };
