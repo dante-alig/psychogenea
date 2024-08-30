@@ -3,7 +3,7 @@ import { HashLink as Link } from "react-router-hash-link";
 const Header = () => {
   const handleClick = () => {
     window.Calendly.initPopupWidget({
-      url: "https://calendly.com/samuelceleste/30min",
+      url: "https://calendly.com/k-raspail971/60min",
     });
     return false;
   };
