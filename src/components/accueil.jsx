@@ -1,4 +1,4 @@
-import profil from "../images/profil.webp";
+import profil from "../images/profil2.jpg";
 
 const Accueil = () => {
   return (
