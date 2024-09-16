@@ -24,10 +24,10 @@ const Therapie = () => {
           <img src={remember} alt="photo de famille" />
         </div>
         <div className="therapie2-texte">
-          Il est temps de reprendre le contrôle. Grâce à une séance de
-          psychogénéalogie, plongeons ensemble dans l’histoire de votre famille
-          pour explorer les liens cachés et identifier les problématiques non
-          résolues qui traversent les générations, en attente de guérison.
+          Il est temps de reprendre le contrôle. Grâce à la psychogénéalogie,
+          plongeons ensemble dans l’histoire de votre famille pour explorer les
+          liens cachés et identifier les problématiques non résolues qui
+          traversent les générations, en attente de guérison.
         </div>
       </div>
       <div className="therapie3-container">
@@ -68,8 +68,8 @@ const Therapie = () => {
                 le biais d’actes symboliques basés sur l’écriture.
               </li>
               <li>
-                Puis un mois plus tard la dernière séance a lieu afin d’évaluer
-                les changements survenus et d’aborder d’éventuels problématiques
+                Puis un mois plus tard nous évaluerons ensemble les changements
+                survenus et aborderons d’éventuelles problématiques
                 persistantes.
               </li>
             </ul>
