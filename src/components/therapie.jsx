@@ -70,8 +70,7 @@ const Therapie = () => {
               <li>
                 Puis un mois plus tard la dernière séance a lieu afin d’évaluer
                 les changements survenus et d’aborder d’éventuels problématiques
-                persistantes. C’est la retranscription complète du texte que
-                vous avez partagé.
+                persistantes.
               </li>
             </ul>
           </div>
