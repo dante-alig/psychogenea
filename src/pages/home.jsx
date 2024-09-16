@@ -1,8 +1,7 @@
 import Accueil from "../components/accueil";
 import Therapie from "../components/therapie";
 import Tarifs from "../components/Tarifs";
-import Feedback from "../components/Feedback";
-import CalendlyWidget from "../components/CalendlyWidget";
+import Temoignages from "../components/temoignages";
 
 const Home = () => {
   return (
@@ -10,7 +9,7 @@ const Home = () => {
       <Accueil />
       <Therapie />
       <Tarifs />
-      <Feedback />
+      <Temoignages />
     </>
   );
 };
