@@ -131,6 +131,7 @@ a {
   height: 550px;
   padding: 50px;
   margin-top: 20px;
+  padding-top: 20px;
 }
 
 .accueil-subtitle {
@@ -140,17 +141,13 @@ a {
 }
 
 .accueil-text {
-  line-height: 25px;
-  font-size: 14px;
+  line-height: 27px;
+  font-size: 18px;
 }
 
 .profil-container img {
   height: 100%;
   object-fit: cover;
-}
-
-.profil-container {
-  margin-bottom: 20px;
 }
 
 /* ------Therapie-------- */
