@@ -5,12 +5,12 @@ import Temoignages from "../components/temoignages";
 
 const Home = () => {
   return (
-    <>
+    <div className="overflow">
       <Accueil />
       <Therapie />
       <Tarifs />
       <Temoignages />
-    </>
+    </div>
   );
 };
 

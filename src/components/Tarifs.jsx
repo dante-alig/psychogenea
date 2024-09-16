@@ -14,8 +14,13 @@ const Tarifs = () => {
         <div className="tarif-presentation">
           <h4>Presentation</h4>
           <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quas
-            expedita mollitia voluptatem explicabo porro.
+            Pour répondre à différents besoins, j’ai créé deux forfaits adaptés
+            à votre parcours en psychogénéalogie. Le forfait Découverte vous
+            permet d’explorer en douceur l’impact de votre héritage familial
+            lors d’une première séance. Pour un travail plus approfondi, le pack
+            3 séances vous offre un accompagnement sur mesure pour identifier et
+            transformer durablement les schémas inconscients qui influencent
+            votre vie.
           </div>
         </div>
         <div className="price1">
@@ -30,8 +35,9 @@ const Tarifs = () => {
             90€<span> / 1 séance</span>
           </div>
           <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quas
-            expedita mollitia voluptatem explicabo porro.
+            Une séance pour découvrir la psychogénéalogie et commencez à
+            explorer vos racines familiales. Faites un premier pas vers une
+            meilleure compréhension de vous-même.
           </div>
           <button onClick={handleClick}>Consultation</button>
         </div>
@@ -47,8 +53,9 @@ const Tarifs = () => {
             250€<span> / 3 séances</span>
           </div>
           <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quas
-            expedita mollitia voluptatem explicabo porro.
+            Trois séances pour approfondir les dynamiques familiales et libérer
+            les schémas inconscients. Un accompagnement personnalisé pour
+            transformer durablement votre vie.
           </div>
           <button onClick={handleClick}>Consultation</button>
         </div>
