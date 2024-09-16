@@ -125,6 +125,7 @@ a {
   width: 550px;
   height: 550px;
   padding: 50px;
+  margin-top: 20px;
 }
 
 .accueil-subtitle {
@@ -141,6 +142,10 @@ a {
 .profil-container img {
   height: 100%;
   object-fit: cover;
+}
+
+.profil-container {
+  margin-bottom: 20px;
 }
 
 /* ------Therapie-------- */
