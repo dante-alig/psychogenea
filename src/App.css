@@ -44,6 +44,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 a {
   color: inherit; /* Utilise la couleur du texte parent */
   text-decoration: none; /* Supprime le soulignement */
